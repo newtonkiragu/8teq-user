@@ -24,11 +24,11 @@ To be deployed
 API Endpoint | Description | Request
 ---- | :---- | :----- |
 http://127.0.0.1:8000/api/signup | Create a new user account | POST
-http://127.0.0.1:8000/api/login | Login a user | POST
-http://127.0.0.1:8000/api/user/\<id> | View details of the new user account | GET
-http://127.0.0.1:8000/api/user/resetpassword | Reset password of a specific user | GET
-http://127.0.0.1:8000/api/user/resetpassword/done | Complete resetting password of a user | PUT
-http://127.0.0.1:8000/api/logout | Logout a specific user | DELETE
+http://127.0.0.1:8000/api/api-auth/login/ | Login a user | POST
+http://127.0.0.1:8000/api/user/id | View details of the new user account | GET
+http://127.0.0.1:8000/api/change_password/<int:pk>/ | Reset password of a specific user | GET
+http://127.0.0.1:8000/api/change_password/<int:pk>/ | Complete resetting password of a user | PUT
+http://127.0.0.1:8000/api/api-auth/login/logout | Logout a specific user | DELETE
 
 ## Setup and installations
 
